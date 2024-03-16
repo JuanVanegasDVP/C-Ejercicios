@@ -1,0 +1,237 @@
+//Punto 1.
+
+//namespace TallerFunciones_Procedimientos
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            //Le pedimos al usuario que ingrese por consola el año de nacimiento.
+//            Console.WriteLine("Ingrese su año de nacimiento: ");
+//            //Almacenamos el año de nacimiento en una variable tipo int llamada añoNacimiento.
+//            int añoNacimiento = Convert.ToInt32(Console.ReadLine());
+
+//            //Llamamos el método.
+//            edadActual(añoNacimiento, out int edad);
+
+//            //Imprimimos el resultado final.
+//            Console.WriteLine($"Su edad actual es {edad}");
+//        }
+
+//        //Creamos el método llamado edadActual el cual nos recibe el parametro añoNacimiento
+//        //y nos devuelve el parametro edad
+//        static void edadActual(int añoNacimiento, out int edad)
+//        {
+//            //Creamos una variable tipo int que será el año actual.
+//            int añoActual = 2024;
+//            //Hacemos la operación que nos calculará la edad de la persona.
+//            edad = añoActual - añoNacimiento;
+//        }
+
+//    }
+//}
+
+
+
+//Punto 2.
+
+//using System.Diagnostics;
+
+//namespace TallerFunciones_Procedimientos
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            //Creamos una variable opc en la cual se almacenará el menú.
+//            int opc;
+
+//            //Creamos un ciclo do-while para que el menú se repita indefinidamente.
+//            do
+//            {
+//                //Creamos el menú.
+//                Console.WriteLine("MENÚ \n");
+//                Console.WriteLine("1. Dividir");
+//                Console.WriteLine("2. Obtener Cubo");
+//                Console.WriteLine("3. Cálculo de IMC (Índice de Masa Corporal");
+//                Console.WriteLine("4. Salir");
+//                opc = Convert.ToInt32(Console.ReadLine());
+
+//                //Creamos un switch en el cual pondremos las funciones para que nos retornen el valor.
+//                switch (opc)
+//                {
+//                    case 1:
+//                        Division();
+//                        break;
+
+//                    case 2:
+//                        Cubo();
+//                        break;
+
+//                    case 3:
+//                        IMC();
+//                        break;
+//                }
+//            }
+
+//            //En el while decimos que si el usuario le da en la opción 4, se saldrá del sistema.
+//            while (opc != 4);
+//            {
+//                Console.WriteLine("Saliste del sistema");
+//            }
+//        }
+
+//        //Creamos la función de división la cual retorna un valor double.
+//        static double Division()
+//        {
+//            //Le pedimos al usuario que ingrese los números para realizar la operación.
+//            Console.WriteLine("Ingrese el primer número: ");
+//            double num1 = Convert.ToDouble(Console.ReadLine());
+//            Console.WriteLine("Ingrese el segundo número: ");
+//            double num2 = Convert.ToDouble(Console.ReadLine());
+
+//            //Hacemos la operación de la división la cual se almacenará en la variable resultado.
+//            double resultado = num1 / num2;
+
+//            //Imprimimos el resultado y lo retornamos.
+//            Console.WriteLine($"El resultado es: {resultado}");
+//            return resultado;
+//        }
+
+//        //Creamos la función de obtener el cubo la cual retorna un valor double.
+//        static double Cubo()
+//        {
+//            //Le pedimos al usuario que ingrese el número para realizar la operación.
+//            Console.WriteLine("Ingrese el número que quiere elevar al cubo: ");
+//            double numCubo = Convert.ToDouble(Console.ReadLine());
+
+//            //Hacemos la operación del cubo la cual se almacenará en la variable resCubo.
+//            double resCubo = numCubo * numCubo * numCubo;
+
+//            //Imprimimos el resultado y lo retornamos.
+//            Console.WriteLine($"El cubo de {numCubo} es: {resCubo}");
+//            return resCubo;
+//        }
+
+//        //Creamos la función de IMC la cual retorna un valor double.
+//        static double IMC()
+//        {
+//            //Le pedimos al usuario que ingrese su peso y altura para calcular su IMC.
+//            Console.WriteLine("Ingrese su peso (Kg): ");
+//            double peso = Convert.ToDouble(Console.ReadLine());
+//            Console.WriteLine("Ingrese su altura: ");
+//            double altura = Convert.ToDouble(Console.ReadLine());
+
+//            //Hacemos la operación del IMC la cual se almacenará en la variable resIMC.
+//            double resIMC = peso / (altura * altura);
+
+//            //Imprimimos el resultado y lo retornamos.
+//            Console.WriteLine($"Su IMC es: {resIMC}");
+//            return resIMC;
+//        }
+//    }
+//}
+
+//Punto 3
+    
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido PolarRectangular!");
+    //    Console.WriteLine(polarARectangular());
+    //}
+
+    //static String polarARectangular()
+    //{
+    //    Console.WriteLine("\nIngresa el radio: ");
+    //    double radio = Convert.ToDouble(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el angulo de inclinación: ");
+    //    double grados = Convert.ToDouble(Console.ReadLine());
+    //    double x = Math.Floor(radio*Math.Cos(grados));
+    //    double y = Math.Floor(radio*Math.Sin(grados));
+    //    return "\nConversion de Polar a Rectangular" +
+    //        "\nLa X vale "+x+"\t la Y vale "+y;
+    //}
+
+//Punto 4
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("Progresión de Números");
+    //    progresion();
+    //}
+    //static void progresion()
+    //{
+    //    Console.WriteLine("\nIngresa el limite: ");
+    //    int limite = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el número 1: ");
+    //    int numUno = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("\nIngresa el número 2: ");
+    //    int numDos = Convert.ToInt32(Console.ReadLine());
+    //    for (int i = 0; i < limite; i++)
+    //    {
+    //        Console.Write(numUno+" "+ numDos+" + ");
+    //        numUno++;
+    //        numDos++;
+    //    }
+    //}
+
+//Punto 5
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("¡Bienvenido Fibonacci!");
+    //    fibonacci();
+    //}
+
+    //static void fibonacci()
+    //{
+    //    int numUno = 0;
+    //    int numDos = 1;
+    //    int acomulador = 0; 
+    //    Console.WriteLine("\nIngresa el limite de la serie: ");
+    //    int limite = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("");
+    //    for (int i = 1; i <= limite; i++)
+    //    {
+    //        numUno = numDos;
+    //        numDos = acomulador;
+    //        acomulador = numUno + numDos;
+    //        Console.WriteLine(acomulador);
+    //    }
+    //}
+
+//Punto 6
+
+    //static void Main()
+    //{
+    //    Console.WriteLine("\nCiclo Infinito");
+    //    secuencia();
+    //}
+
+    //static void secuencia()
+    //{
+    //    Console.WriteLine("\nIngresa el ultimo número: ");
+    //    int limiteCiclo = Convert.ToInt32(Console.ReadLine());
+
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        Console.Write((i+1) + "     ");
+    //    }
+    //    Console.WriteLine("");
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        Console.Write("__    ");
+    //    }
+    //    Console.WriteLine("");
+    //    for (int i = 0; i < limiteCiclo; i++)
+    //    {
+    //        if (i == 0)
+    //        {
+    //            Console.Write("2   ");
+    //        }
+    //        else
+    //        {
+    //            Console.Write("2^" + (i + 1) + "   ");
+    //        }
+    //    }
+    //}
